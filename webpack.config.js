@@ -7,8 +7,8 @@ module.exports = {
   mode: 'development',
   //entry: './src/public/Components/App.js',
   entry: {
-    app: './src/public/Components/App.js',
-    button: './src/public/Components/Button.js',
+    app: './src/public/Components/App.jsx',
+    button: './src/public/Components/Button.jsx',
   },
   devtool: 'inline-source-map',
   devServer: {
