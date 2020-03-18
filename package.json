@@ -9,7 +9,8 @@
     "watch": "webpack --watch",
     "webpack-dev": "webpack-dev-server --open",
     "start": "nodemon server/index.js",
-    "lint": "eslint --ext .js --ext jsx server src --fix"
+    "lint": "eslint --ext .js --ext jsx server src --fix",
+    "start-dev": "npm run lint && npm run build && npm run webpack-dev"
   },
   "author": "",
   "license": "ISC",

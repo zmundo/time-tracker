@@ -22,6 +22,9 @@ module.exports = {
       template: "./src/public/index.html"
     }),
   ],
+  resolve: {
+    extensions: [".js", ".jsx"]
+},
   output: {
     //filename: 'bundle.js',
     filename: '[name].bundle.js',
@@ -31,10 +34,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: "babel-loader"
-      },
+      },      
       {
         
         test: /\.css$/,
